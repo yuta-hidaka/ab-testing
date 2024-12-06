@@ -15,6 +15,7 @@ export default function Page() {
 
   const handleClick = () => {
     sendGTMEvent({ event: "click", category: "button", label: "go detail page", version: cookie });
+    console.log("Page A cookie", cookie);
   }
 
   return (
