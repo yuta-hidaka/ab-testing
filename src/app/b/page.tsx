@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { sendGTMEvent } from '@next/third-parties/google'
 
-export default function Page() {
+export default function Home() {
   const [cookie, setCookie] = useState("");
   useEffect(() => {
     console.log("Page A mounted");
@@ -27,7 +27,7 @@ export default function Page() {
         The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can enjoy the main night life in Barcelona.
       </p>
    
-      <button onClick={handleClick} className="rounded-md bg-slate-800 py-2 px-4 mt-6 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+      <button onClick={() => handleClick()} className="rounded-md bg-slate-800 py-2 px-4 mt-6 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
         Read more
       </button>
     </div>
