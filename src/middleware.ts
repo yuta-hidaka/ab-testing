@@ -21,9 +21,9 @@ export function middleware(req: NextRequest) {
 
   // if it's the old variant, rewrite to the old templates marketplace
   if (variant === 'old') {
-    url.pathname = '/b';
+    url.pathname = '/b'; // rewrite
   } else {
-      url.pathname = '/a';
+    url.pathname = '/a'; // rewrite
   }
 
   const res = NextResponse.rewrite(url);
